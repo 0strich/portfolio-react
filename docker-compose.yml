@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  react:
+    image: portfolio-react
+    container_name: portfolio-react-container
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - VIRTUAL_HOST=wisrich-contact
+      - LETSENCRYPT_HOST=wisrich-contact
+      - LETSENCRYPT_EMAIL=gee8196@gmail.com
+    network_mode: "webproxy"
+    restart: always
+    stdin_open: true
