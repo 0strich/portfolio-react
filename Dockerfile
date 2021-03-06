@@ -11,7 +11,7 @@ RUN npm run build
 
 # Production Environment
 FROM nginx:1.19.3-alpine
-ENV PUBLIC_URL salt-mine.io
+ENV PUBLIC_URL wisrich.contact
 COPY --from=builder /project/portfolio-react/build /usr/share/nginx/html
 EXPOSE 80
 EXPOSE 443

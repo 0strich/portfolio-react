@@ -7,8 +7,8 @@ services:
       context: .
       dockerfile: Dockerfile
     environment:
-      - VIRTUAL_HOST=wisrich-contact
-      - LETSENCRYPT_HOST=wisrich-contact
+      - VIRTUAL_HOST=wisrich.contact
+      - LETSENCRYPT_HOST=wisrich.contact
       - LETSENCRYPT_EMAIL=gee8196@gmail.com
     network_mode: "webproxy"
     restart: always
